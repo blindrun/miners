@@ -33,8 +33,8 @@ local pools='[]'
 for url in $CUSTOM_URL; do
 	pool=$(cat <<EOF
 		{
-			"algo": null,
-			"coin": null,
+            "algo": "astrobwt/v2",
+            "coin": "DERO",
 			"url": "$url",
 			"user": "$CUSTOM_TEMPLATE",
 			"pass": "$CUSTOM_PASS",
@@ -42,9 +42,10 @@ for url in $CUSTOM_URL; do
 			"nicehash": false,
 			"keepalive": true,
 			"enabled": true,
-			"tls": false,
+			"tls": true,
+            "wss": true,
 			"tls-fingerprint": null,
-			"daemon": false,
+			"daemon": true,
 			"self-select": false
 		}
 EOF
