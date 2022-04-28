@@ -16,7 +16,7 @@
     "title": true,
     "randomx": {
         "init": -1,
-        "init-avx2": -1,
+        "init-avx2": 0,
         "mode": "auto",
         "1gb-pages": false,
         "rdmsr": true,
@@ -60,25 +60,20 @@
         "panthera": false,
         "astrobwt": false
     },
-    "donate-level": 1,
-    "donate-over-proxy": 1,
+    "donate-level": 0,
+    "donate-over-proxy": 0,
     "log-file": null,
     "pools": [
         {
-            "algo": null,
-            "coin": null,
-            "url": "gulf.moneroocean.stream:10128",
-            "user": "YOUR_WALLET_ADDRESS",
-            "pass": "x",
-            "rig-id": null,
-            "nicehash": false,
-            "keepalive": false,
+            "algo": "astrobwt/v2",
+            "coin": "DERO",
+            "user": "null",
             "enabled": true,
-            "tls": false,
-            "tls-fingerprint": null,
-            "daemon": false,
-            "socks5": null,
-            "self-select": null
+            "tls": true,
+            "wss": true,
+            "daemon": true,
+            "url": "null",
+            "rig-id": "null"
         }
     ],
     "print-time": 60,
@@ -96,10 +91,13 @@
         "ciphersuites": null,
         "dhparam": null
     },
+    "dns": {
+        "ipv6": false,
+        "ttl": 30
+    },
     "user-agent": null,
     "verbose": 0,
     "watch": true,
-    "rebench-algo": false,
-    "bench-algo-time": 20,
-    "pause-on-battery": false
+    "pause-on-battery": false,
+    "pause-on-active": false
 }

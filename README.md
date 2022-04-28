@@ -1,6 +1,7 @@
 # hiveos
-Custom miner packages for HiveOS
+FORKED FROM MO:
+Custom miner packages for HiveOS using XMRig 6.17.0 for DERO Mining: Fixing the config file to work without editing it.
 
-You can use these advanced mo_xmrig (for CPU) and mo_gminer (for GPU) custom miner packages that allow auto switching to the most profitable algo if used to mine to MoneroOcean (moneroocean.stream) pool and get paid in XMR.
+You can use these advanced mo_xmrig (for CPU) custom miner packages.
 
 Check https://moneroocean.blogspot.com/2021/02/hiveos-ethereum-gpu-miner-setup.html to how to use them.
