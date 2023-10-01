@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-hugepages -r
+/home/user/RainbowMiner/stopp.sh
